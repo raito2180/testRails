@@ -1,7 +1,7 @@
 <% if @posts.present? %>
 <% @posts.each do |post|%>
-  <span>投稿名:</span><%= post.name %>
-  <span>投稿内容:</span><%= post.text %>
+  <span>投稿名:</span><%= post.name %><br>
+  <span>投稿内容:</span><%= post.text %><br>
 <% end %>
 <% else %>
   <span>投稿がありません</span>

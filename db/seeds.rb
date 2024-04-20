@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+10.times do |index|
+  Post.create!(
+    name: "タイトル#{index + 1}",
+    text: "内容#{index + 1}",
+  )
+end
