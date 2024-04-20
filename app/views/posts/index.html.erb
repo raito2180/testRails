@@ -1,0 +1,9 @@
+<% if @posts.present? %>
+<% @posts.each do |post|%>
+  <span>投稿名:</span><%= post.name %>
+  <span>投稿内容:</span><%= post.text %>
+<% end %>
+<% else %>
+  <span>投稿がありません</span>
+<% end %>
+<button>投稿を作成する</button>
