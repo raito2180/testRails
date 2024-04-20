@@ -18,6 +18,7 @@ test:
 
 production:
   <<: *default
+  host: dpg-cohkgqf79t8c7383bsig-a
   database: my_app_production_113d
   username: my_app_production_113d_user
   password: <%= ENV["MY_APP_DATABASE_PASSWORD"] %>
